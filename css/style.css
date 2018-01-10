@@ -1,0 +1,277 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  background-color: #cecfd0;
+}
+
+#root {
+  padding: 6px;
+}
+
+.house {
+  width: 100%;
+  min-width: 222px;
+  background: #2980b9;
+  border-radius: 6px;
+  border: 2px solid #2980b9;
+  padding-bottom: 20px;
+}
+
+.room {
+  min-width: 204px;
+  background: #f7f7f7;
+  margin: 10px 4px;
+  border: 2px solid #f1c40f;
+  border-radius: 5px;
+  padding: 3px 2px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.unitDevice {
+  min-width: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.device {
+  width: 200px;
+  height: 284px;
+  border: 2px solid #96b4c7;
+  border-radius: 5px;
+  margin: 4px;
+  display: inline-block;
+  text-align: center;
+  color: #9b59b6;
+}
+
+.cPanel {
+  border-bottom : 1px solid #6e9cff;
+}
+
+.cPanelRoom {
+  height: 284px;
+  width: 200px;
+  border-radius: 5px;
+  border: 2px solid #bda2c7;
+  display: inline-table;
+  background-color: #2980b930;
+  margin: 4px;
+}
+
+#npv {
+  margin: 3px 0px;
+  display: inline-block;
+  color: #e8e8e8;
+  font-size: 0.9em;
+  font-weight: bold;
+  float: right;
+}
+
+#nrp {
+  text-transform: uppercase;
+  float: right;
+  padding: 3px;
+  font-size: 0.9em;
+  font-weight: 900;
+  color: royalblue;
+}
+
+#nrd {
+  display: flex;
+}
+
+.delRoomDiv{
+  padding-top: 3px;
+}
+
+.delIllumDiv{
+  position: absolute;
+  width: 200px;
+  margin-top: 139px;
+}
+
+a.addRoom {
+  margin: 7px 5px;
+  display: inline-block;
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: #a9acaf; /* фон кнопки */
+  padding: .4em 0.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  border-radius: 5px;
+}
+
+a.addRoom:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+a.addRoom:active { background: rgb(152,15,0); } /* при нажатии */
+
+a.delElem {
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  background: #c0392b;
+  padding: 0.3em 0em;
+  outline: none;
+  display: block;
+  text-align: center;
+  border-radius: 0px 0px 3px 3px;
+}
+
+a.delElem:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+a.delElem:active { background: rgb(152,15,0); } /* при нажатии */
+
+.btn {
+  border-radius: 5px;
+  background: #fff;
+  margin: 2px;
+  padding-top: 4px;
+  margin-bottom: 5px;
+  width: 194px;
+  display: block;
+}
+
+.btnPow {
+  border-radius: 5px;
+  background: #fff;
+  margin: 4px;
+  padding-top: 4px;
+}
+
+.slColor {
+  height: 20px;
+  width: 0px;
+  background: #f1c40f;
+  margin-left: 9.5px;
+  margin-bottom: -10px;
+  margin-top: 4px;
+}
+
+.slColorVol {
+  height: 15px;
+  width: 0px;
+  background: #2ecc71;
+  margin-left: 41px;
+  margin-bottom: -10px;
+  margin-top: 16px;
+}
+
+.sliderLoad {
+  width: 180px;
+  margin-bottom: 7px;
+}
+
+.sliderVol {
+  width: 119px;
+  height: 20px;
+}
+
+.divSlider {
+  width: 200px;
+  border: solid #bdc3c7;
+  border-left: none;
+  border-right: none;
+  margin-top: 65px;
+  position: absolute;
+}
+
+.divVolume {
+  width: 200px;
+  height: 68px;
+  border: solid #bdc3c7;
+  border-left: none;
+  border-right: none;
+  margin-top: 65px;
+  position: absolute;
+}
+
+.divBright {
+  margin-top: 3px;
+  color: #9b59b6;
+  font-weight: 900;
+}
+
+.divStatusVol {
+  margin-left: 40px;
+  color: #9b59b6;
+  font-weight: 900;
+  text-align: left;
+}
+
+.imgDev {
+  margin-left: 30px;
+}
+
+.statusDiv {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.btnVolUp, .btnVolDown, .btnVolMute {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 2px;
+  height: 31px;
+  position: absolute;
+
+
+}
+.btnVolUp {
+  margin-top: 14px;
+  margin-left: 64px;
+}
+
+.btnVolDown {
+  margin-top: 14px;
+  margin-left: -97px;
+}
+
+.btnVolMute {
+  margin-top: -19px;
+  margin-left: -97px;
+}
+
+.divChannel {
+  height: 58px;
+  width: 200px;
+  border: solid #bdc3c7;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  position: absolute;
+}
+
+.selChannel {
+  width: 130px;
+  height: 30px;
+  margin-top: 3px;
+  margin-left: -65px;
+  font-size: 14px;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.btnPrevCh, .btnNextCh{
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 2px;
+  height: 31px;
+  width: 31px;
+  position: absolute;
+  margin-top: 2px;
+}
+
+.btnPrevCh {
+  margin-left: -98px;
+}
+.btnNextCh {
+  margin-left: 67px;
+}
+
+.divName {
+  margin-top: 3px;
+  color: #9b59b6;
+  font-weight: 900;
+}
